@@ -95,7 +95,7 @@ function showHTML(elements){
             <a href='author.html?author=${quoteAuthor}' class='author-link'>
             <div class='author-div mt-5 p-4 rounded'> 
                 <div class='d-flex'>
-                    <h3>${quoteAuthor}</h3> <img src='/img/rightarrow_derecha_5812.png' alt'right arrow icon'>
+                    <h3>${quoteAuthor}</h3> <img src='./img/rightarrow_derecha_5812.png' alt'right arrow icon'>
                 </div>
                 <span>${quoteGenre}</span>
             </div>
