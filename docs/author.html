@@ -1,4 +1,4 @@
-<script>const URLParams = new URLSearchParams(window.location.search);const authorName = URLParams.get('author');if(authorName === null){window.location.href = 'index.html';}</script>
+<script>const URLParams = new URLSearchParams(window.location.search);const authorName = URLParams.get('author');if(authorName === null || authorName === ''){window.location.href = 'index.html';}</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>

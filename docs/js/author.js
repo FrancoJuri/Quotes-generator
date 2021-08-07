@@ -27,6 +27,13 @@ async function consultarAPI(author, limit){
 
         const response = await fetch(url);
         const result = await response.json();
+        if(!result.data.length){
+            content.innerHTML = `<div class='alert alert-danger rounded p-3'>Author not found</div>`;
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 1000);
+            return;
+        }
         showHTML(result);
     } catch (error) {
         content.innerHTML = `<div class='alert alert-danger rounded p-3'>An error has ocurred</div>`
